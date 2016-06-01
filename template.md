@@ -36,6 +36,7 @@ TBD Hotels nearby (optional)
   1. Opening of the meeting (Mr. Neumann)
   1. Introduction of attendees
   1. Host facilities, local logistics
+1. Find volunteers for note taking
 1. Adoption of the agenda
 1. Approval of the minutes from last meeting
 1. Report from the Ecma Secretariat (15m)

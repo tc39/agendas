@@ -17,7 +17,10 @@
 
 ## Logistics
 
-TBD Host Logistics (Parking, building access, etc.)
+* Where to park
+* How to access the building
+* Technical presentation requirements (adapters, google hangouts/other accounts required, etc.)
+* Any other logistics required to participate in the meeting
 
 ### Registration
 
@@ -39,12 +42,17 @@ TBD Hotels nearby (optional)
 1. ECMA262 Status Updates (15m)
 1. ECMA402 Status Updates (15m)
 1. Test262 Status Updates (15m)
-1. Timeboxed agenda items: topics are timeboxed in increments of 15 minutes up to 60 minutes. Shorter proposals come first. Additional discussion comes at the end of the meeting.
+1. Timeboxed agenda items
 1. Stage 0+ proposals looking to advance
 1. New proposals
 1. Discussion and updates for Stage 0+ Proposals
 1. Overflow from timeboxed discussion items (in insertion order)
 1. Closure
+
+### Agenda Topic Rules
+
+1. Proposals looking to advance must be added to the agenda along with necessary review materials 7 days prior to the first day of the meeting.
+1. Timeboxed topics may be 15, 30, 45, or 60 minutes in length.
 
 ## Dates and locations of future meetings
 

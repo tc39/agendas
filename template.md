@@ -44,9 +44,14 @@ TBD Hotels nearby (optional)
 1. ECMA402 Status Updates (15m)
 1. Test262 Status Updates (15m)
 1. Timeboxed agenda items
-1. Stage 0+ proposals looking to advance
-1. New proposals
-1. Discussion and updates for Stage 0+ Proposals
+  1. 15 Minute Items
+  1. 30 Minute Items
+  1. 45 Minute Items
+  1. 60 Minute Items
+1. Non-timeboxed agenda items
+  1. Stage 0+ proposals looking to advance
+  1. New proposals
+  1. Discussion and updates for Stage 0+ Proposals
 1. Overflow from timeboxed discussion items (in insertion order)
 1. Closure
 

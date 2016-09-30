@@ -65,6 +65,8 @@ TBD Hotels nearby (optional)
 1. Proposals looking to advance must be added to the agenda along with necessary review materials 7 days prior to the first day of the meeting.
 1. Timeboxed topics may be 15, 30, 45, or 60 minutes in length.
 
+### Schedule constraints
+
 ## Dates and locations of future meetings
 
 TBD (Copy the table from the previous agenda)

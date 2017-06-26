@@ -22,7 +22,7 @@
 * Technical presentation requirements (adapters, google hangouts/other accounts required, etc.)
 * Any other logistics required to participate in the meeting
 
-Allen's paper on standards committee participation for newbees: http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf
+Allen's paper on standards committee participation for new attendees: http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf
 
 ### Registration
 

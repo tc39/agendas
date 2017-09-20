@@ -32,6 +32,12 @@ TBD
 
 TBD Hotels nearby (optional)
 
+## Agenda Topic Rules
+
+1. Proposals looking to advance must be added to the agenda along with necessary review materials 7 days prior to the first day of the meeting.
+   1. Note: any items added after 7 days prior to the start time of the meeting must be denoted with a ⌛️ symbol, which indicates that it is not eligible for stage advancement, and that it must wait until all other items have been addressed.
+1. Timeboxed topics may be 15, 30, 45, or 60 minutes in length.
+
 ## Agenda items
 
 1. Opening, welcome and roll call
@@ -64,11 +70,6 @@ TBD Hotels nearby (optional)
   1. Discussion and updates for Stage 0+ Proposals
 1. Overflow from timeboxed discussion items (in insertion order)
 1. Closure
-
-### Agenda Topic Rules
-
-1. Proposals looking to advance must be added to the agenda along with necessary review materials 7 days prior to the first day of the meeting.
-1. Timeboxed topics may be 15, 30, 45, or 60 minutes in length.
 
 ### Schedule constraints
 

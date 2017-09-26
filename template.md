@@ -64,7 +64,7 @@ TBD Hotels nearby (optional)
   1. 60 Minute Items
 1. Non-timeboxed overflow from previous meeting
 1. Non-timeboxed agenda items
-  1. Web compatibility issues / Needs-consensus PRs
+  1. Web compatibility issues / Needs Consensus PRs
   1. Stage 0+ proposals looking to advance
   1. New proposals
   1. Discussion and updates for Stage 0+ Proposals

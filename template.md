@@ -34,13 +34,17 @@ TBD Hotels nearby (optional)
 
 ## Agenda Topic Rules
 
-Deadline for advancement eligibility: **January 1, 2000, 18:00 UTC**
+Deadline for advancement eligibility: [**January 1, 2000, 18:00 UTC**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
+<sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub>
 
 1. Proposals not looking to advance may be added at any time; if after the deadline, please always use a pull request so that members are notified of changes.
 1. Proposals looking to advance to stage 0 or 1 must be added (and noted as such) prior to the deadline.
+    1. Such proposals *should* include supporting materials when possible.
 1. Proposals looking to advance to stages 2, 3, or 4 must be added (and noted as such) *along with the necessary materials* prior to the deadline.
-    1. Necessary materials may include slides, a link to the proposal repo, a link to spec text, etc.
+    1. Such proposals *must* link to supporting materials prior to the deadline, or they will not be eligible for advancement. If these materials change substantially after the deadline, the proposal may be disqualified from advancement, based on the committee’s judgment.
 1. Timeboxed topics may be 15, 30, 45, or 60 minutes in length.
+
+Supporting materials includes slides, a link to the proposal repository, a link to spec text, etc.; essentially, anything you are planning to present to the committee, or that would be useful for delegates to review.
 
 ## Agenda items
 

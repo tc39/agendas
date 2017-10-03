@@ -34,8 +34,8 @@ TBD Hotels nearby (optional)
 
 ## Agenda Topic Rules
 
-Deadline for advancement eligibility: [**January 1, 2000, 18:00 UTC**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
-  - <sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub>
+Deadline for advancement eligibility: [**January 1st, 2039, 23:59:59 UTC-12**](https://www.timeanddate.com/countdown/generic?iso=20390101T235959&p0=3926&msg=TC39+Submission+deadline&ud=1&font=cursive)
+  - <sub>Note: this time is selected to be precisely 10 days - at 23:59:59 on `UTC -12` time - prior to the start of the meeting. The last day should be the second to last Friday if the meeting starts in a Tuesday.</sub>
 
 1. Proposals not looking to advance may be added at any time; if after the deadline, please always use a pull request so that members are notified of changes.
 1. Proposals looking to advance to stage 0 or 1 must be added (and noted as such) prior to the deadline.

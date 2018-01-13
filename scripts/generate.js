@@ -40,7 +40,7 @@ magic(readme, {
         return `<details${isOpen(year)}>
           <summary>${year}</summary>
 
-            ${dedent(months.map(m => `- [${monthNames[m - 1]}](./${year}/${m}.md)`).join('\n'))}
+          ${dedent(months.map(m => `- [${monthNames[m - 1]}](./${year}/${m}.md)`).join('\n'))}
           </details>`;
       }).join('\n\n'));
     },

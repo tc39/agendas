@@ -32,7 +32,7 @@ TBD
 
 TBD Hotels nearby (optional)
 
-## Agenda Topic Rules
+## Agenda topic rules
 
 Deadline for advancement eligibility: [**January 1, 2000, 18:00 UTC**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
   - <sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub>
@@ -55,7 +55,7 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 1. Find volunteers for note taking
 1. Adoption of the agenda
 1. Approval of the minutes from last meeting
-1. Next Meeting Host and Logistics
+1. Next meeting host and logistics
 1. Report from the Ecma Secretariat (15m)
 1. Project Editors’ Reports
     1. ECMA262 Status Updates (15m)
@@ -63,29 +63,29 @@ Supporting materials includes slides, a link to the proposal repository, a link 
     1. ECMA404 Status Updates (15m)
     1. Test262 Status Updates (15m)
 1. Web compatibility issues / Needs Consensus PRs
-    1. 15 Minute Items
-    1. 30 Minute Items
-    1. 45 Minute Items
-    1. 60 Minute Items
+    1. 15-minute items
+    1. 30-minute items
+    1. 45-minute items
+    1. 60-minute items
     1. Timebox Not Yet Selected (please select one)
 1. Timeboxed overflow from previous meeting
-    1. 15 Minute Items
-    1. 30 Minute Items
-    1. 45 Minute Items
-    1. 60 Minute Items
+    1. 15-minute items
+    1. 30-minute items
+    1. 45-minute items
+    1. 60-minute items
     1. Timebox Not Yet Selected (champion, please select one)
 1. Timeboxed agenda items
-    1. 15 Minute Items
-    1. 30 Minute Items
-    1. 45 Minute Items
-    1. 60 Minute Items
+    1. 15-minute items
+    1. 30-minute items
+    1. 45-minute items
+    1. 60-minute items
 1. Non-timeboxed overflow from previous meeting
 1. Non-timeboxed agenda items
     1. Stage 0+ proposals looking to advance
     1. New proposals
     1. Discussion and updates for Stage 0+ Proposals
 1. Overflow from timeboxed discussion items (in insertion order)
-1. Other Business
+1. Other business
     1. Thank host
 1. Adjournment
 

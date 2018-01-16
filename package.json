@@ -1,0 +1,11 @@
+{
+  "private": true,
+  "scripts": {
+    "build": "./scripts/generate.js"
+  },
+  "devDependencies": {
+    "dedent": "^0.7.0",
+    "glob": "^7.1.2",
+    "markdown-magic": "^0.1.20"
+  }
+}

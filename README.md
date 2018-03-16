@@ -5,7 +5,7 @@ TC39 meeting agendas
 <!-- AGENDA_LIST:START (TC39) -->
 <details open>
 <summary>2018</summary>
-
+- [May](./2018/05.md)
 - [March](./2018/03.md)
 - [January](./2018/01.md)
 </details>

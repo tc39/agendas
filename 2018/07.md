@@ -87,9 +87,6 @@ Supporting materials includes slides, a link to the proposal repository, a link 
     | stage | timebox | topic | presenter |
     |:-----:|:-------:|-------|-----------|
 
-1. Exceptions for this meeting
-
-
 1. Longer or open-ended discussions
 
     | timebox | topic | presenter |

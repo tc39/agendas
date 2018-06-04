@@ -6,6 +6,7 @@ TC39 meeting agendas
 <details open>
 <summary>2018</summary>
 
+- [July](./2018/07.md)
 - [May](./2018/05.md)
 - [March](./2018/03.md)
 - [January](./2018/01.md)

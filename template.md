@@ -63,7 +63,7 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 1. Report from the Ecma Secretariat (15m, Istvan Sebestyen)
 1. Project Editors’ Reports
     1. ECMA262 Status Updates (15m)
-    1. ECMA402 Status Updates (15m)
+    1. [ECMA402](https://github.com/tc39/ecma402) Status Updates (15m)
     1. ECMA404 Status Updates (15m)
     1. Test262 Status Updates (15m)
 1. Updates from the CoC Committee (15m)

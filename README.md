@@ -3,13 +3,13 @@ agendas
 
 TC39 meeting agendas
 <!-- AGENDA_LIST:START (TC39) -->
-<details>
+<details open>
 <summary>2019</summary>
 
 - [January](./2019/01.md)
 </details>
 
-<details open>
+<details>
 <summary>2018</summary>
 
 - [November](./2018/11.md)

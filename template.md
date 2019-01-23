@@ -43,6 +43,7 @@ Deadline for advancement eligibility: [**January 1, 2000, 18:00 UTC**](https://w
     1. Such proposals *should* include supporting materials when possible.
 1. Proposals looking to advance to stages 2, 3, or 4 must be added (and noted as such) *along with the necessary materials* prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
     1. Such proposals *must* link to supporting materials prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline. If these materials change substantially after the deadline, the proposal may be disqualified from advancement, based on the committee’s judgment.
+    1. Proposals looking to advance to stage 4 *must* link to a pull request into [the spec](https://github.com/tc39/ecma262), since the [process](https://tc39.github.io/process-document/) requires one.
 1. Proposal-based agenda items should be sorted primarily by stage (descending), secondarily by timebox (ascending), and finally by insertion date.
 
 Supporting materials includes slides, a link to the proposal repository, a link to spec text, etc.; essentially, anything you are planning to present to the committee, or that would be useful for delegates to review.

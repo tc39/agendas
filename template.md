@@ -70,33 +70,34 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 1. Updates from the CoC Committee (15m)
 1. [Web compatibility issues](https://github.com/tc39/ecma262/issues?utf8=✓&q=is%3Aopen+label%3A%22web+reality%22+is%3Aissue) / [Needs Consensus PRs](https://github.com/tc39/ecma262/pulls?q=is%3Apr+is%3Aopen+label%3A%22needs+consensus%22)
 
-    | timebox | topic | presenter |
-    |:-------:|-------|-----------|
+    | ✓ | timebox | topic | presenter |
+    |:-:|:-------:|-------|-----------|
 
 1. Overflow from previous meeting
 
-    | timebox | topic | presenter |
-    |:-------:|-------|-----------|
+    | ✓ | timebox | topic | presenter |
+    |:-:|:-------:|-------|-----------|
 
 1. Short (&le;30m) Timeboxed Discussions
 
-    | timebox | topic | presenter |
-    |:-------:|-------|-----------|
+    | ✓ | timebox | topic | presenter |
+    |:-:|:-------:|-------|-----------|
 
 1. Proposals
 
-    | stage | timebox | topic | presenter |
-    |:-----:|:-------:|-------|-----------|
+    | ✓ | stage | timebox | topic | presenter |
+    |:-:|:-----:|:-------:|-------|-----------|
 
 1. Longer or open-ended discussions
+    ✓ represents an agenda item which has been presented, and does not indicate stage advancement 
 
-    | timebox | topic | presenter |
-    |:-------:|-------|-----------|
+    | ✓ | timebox | topic | presenter |
+    |:-:|:-------:|-------|-----------|
 
 1. Overflow from timeboxed agenda items (in insertion order)
 
-    | topic | presenter |
-    |-------|-----------|
+    | ✓ | topic | presenter |
+    |:-:|-------|-----------|
 
 1. Other business
     1. Thank host

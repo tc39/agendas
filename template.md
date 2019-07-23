@@ -88,7 +88,7 @@ Supporting materials includes slides, a link to the proposal repository, a link 
     | ✓ | stage | timebox | topic | presenter |
     |:-:|:-----:|:-------:|-------|-----------|
 
-1. Longer or open-ended discussions
+1. Longer or open-ended discussions  
     ✓ represents an agenda item which has been presented, and does not indicate stage advancement 
 
     | ✓ | timebox | topic | presenter |

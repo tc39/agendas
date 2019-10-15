@@ -1,41 +1,22 @@
 
 <img src="../images/Ecma_RVB-003.jpg" align="right" height="70" alt="" />
 
-## Agenda for the TBD meeting of Ecma TC39
+# Agenda for the TBD meeting of Ecma TC39
 
 - **Host**: TBD
 - **Dates**: TBD
 - **Times**:
-  - 10:00 to 17:00 PDT on TBD
-  - 10:00 to 16:00 PDT on TBD
-- **Location**: TBD
-- **Wifi**: TBD
-- **Dinner**: TBD
-- **Contact**:
-  - Name: TBD
-  - Phone: TBD
-  - Email: TBD
-
-## Logistics
-
-* Where to park
-* How to access the building
-* Technical presentation requirements (adapters, google hangouts/other accounts required, etc.)
-* Any other logistics required to participate in the meeting
+  - 10:00 to 17:00 TZ on TBD
+  - 10:00 to 17:00 TZ on TBD
+  - 10:00 to 16:00 TZ on TBD
+- **Location**: CITY, COUNTRY
+- **Attendee information**: LINK TO REFLECTOR
 
 Allen's paper on standards committee participation for new attendees: http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf
 
-### Registration
-
-TBD
-
-### Hotels
-
-TBD Hotels nearby (optional)
-
 ## Agenda topic rules
 
-Deadline for advancement eligibility: [**January 1, 2000, 18:00 UTC**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
+Deadline for advancement eligibility: [**CALCULATE TIME HERE**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
   - <sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub>
 
 1. Proposals not looking to advance may be added at any time; if after the deadline, please always use a pull request so that members are notified of changes.
@@ -50,18 +31,18 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 
 ## Agenda items
 
-1. Opening, welcome and roll call
-    1. Opening of the meeting (Yulia Startsev, Aki Rose, Brian Terlson)
+1. Opening, welcome and roll call (Chair)
+    1. Opening of the meeting
     1. TC39 follows its [Code of Conduct](https://tc39.github.io/code-of-conduct/)
     1. Introduction of attendees
     1. Host facilities, local logistics
-    1. Quick recap of meeting IPR policy (Daniel Ehrenberg)
-    1. Overview of communication tools (Brian Terlson)
+    1. Quick recap of meeting IPR policy
+    1. Overview of communication tools
 1. Find volunteers for note taking
 1. Adoption of the agenda
 1. Approval of the minutes from last meeting
 1. Next meeting host and logistics
-1. Report from the Ecma Secretariat (15m, Istvan Sebestyen)
+1. Secretary's Report (15m, Istvan Sebestyen)
 1. Project Editors’ Reports
     1. [ECMA262](https://github.com/tc39/ecma262) Status Updates (15m)
     1. [ECMA402](https://github.com/tc39/ecma402) Status Updates (15m)
@@ -85,11 +66,12 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 
 1. Proposals
 
+    ✓ represents an agenda item which has been presented, and does not indicate stage advancement
+
     | ✓ | stage | timebox | topic | presenter |
     |:-:|:-----:|:-------:|-------|-----------|
 
 1. Longer or open-ended discussions
-    ✓ represents an agenda item which has been presented, and does not indicate stage advancement
 
     | ✓ | timebox | topic | presenter |
     |:-:|:-------:|-------|-----------|

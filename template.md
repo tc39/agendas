@@ -20,8 +20,10 @@ Deadline for advancement eligibility: [**CALCULATE TIME HERE**](https://www.time
   - <sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub>
 
 1. Proposals not looking to advance may be added at any time; if after the deadline, please always use a pull request so that members are notified of changes.
-1. Proposals looking to advance to stage 0 or 1 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
+1. Proposals seeking feedback at stage 0 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
     1. Such proposals *should* include supporting materials when possible.
+1. Proposals looking to advance to stage 1 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
+    1. Such proposals *must* link to a proposal repository and they *should* link to supporting materials when possible.
 1. Proposals looking to advance to stages 2, 3, or 4 must be added (and noted as such) *along with the necessary materials* prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
     1. Such proposals *must* link to supporting materials prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline. If these materials change substantially after the deadline, the proposal may be disqualified from advancement, based on the committee’s judgment.
     1. Proposals looking to advance to stage 4 *must* link to a pull request into [the spec](https://github.com/tc39/ecma262), since the [process](https://tc39.github.io/process-document/) requires one.

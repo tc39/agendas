@@ -61,6 +61,8 @@ Supporting materials includes slides, a link to the proposal repository, a link 
     | ✓ | timebox | topic | presenter |
     |:-:|:-------:|-------|-----------|
 
+1. Incubation call chartering (15m on the last day)
+
 1. Short (&le;30m) Timeboxed Discussions
 
     | ✓ | timebox | topic | presenter |

@@ -6,6 +6,7 @@ TC39 meeting agendas
 <details open>
 <summary>2020</summary>
 
+- [September](./2020/09.md)
 - [July](./2020/07.md)
 - [June](./2020/06.md)
 - [March](./2020/03.md)

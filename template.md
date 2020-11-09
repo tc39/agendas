@@ -12,7 +12,9 @@
 - **Location**: CITY, COUNTRY
 - **Attendee information**: LINK TO REFLECTOR
 
-Allen's paper on standards committee participation for new attendees: http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf
+Background:
+- Allen Wirfs-Brock's [paper on standards committee participation for new attendees](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)
+- TC39's documentation on [How to participate in meetings](https://github.com/tc39/how-we-work/blob/master/how-to-participate-in-meetings.md)
 
 ## Agenda topic rules
 

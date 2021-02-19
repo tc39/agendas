@@ -4,8 +4,7 @@
 # Agenda for the TBD meeting of Ecma TC39
 
 - **Host**: TBD
-- **Dates**: TBD
-- **Times**:
+- **Dates and times**:
   - 10:00 to 17:00 TZ on TBD
   - 10:00 to 17:00 TZ on TBD
   - 10:00 to 16:00 TZ on TBD

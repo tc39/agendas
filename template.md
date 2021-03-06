@@ -92,6 +92,8 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 
 ### Schedule constraints
 
+<!-- Be specific! Provide a full name, date and time range that they will or will not be available, and which sessions they are trying to prioritize. Satisfaction not guaranteed, but more information is useful. Conflicting constraints honored on a first-come, first served basis. -->
+
 ## Dates and locations of future meetings
 
 TBD (Copy the table from the previous agenda)

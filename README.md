@@ -6,6 +6,7 @@ TC39 meeting agendas
 <details open>
 <summary>2021</summary>
 
+- [May](./2021/05.md)
 - [April](./2021/04.md)
 - [March](./2021/03.md)
 - [January](./2021/01.md)

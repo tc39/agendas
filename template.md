@@ -5,11 +5,20 @@
 
 - **Host**: TBD
 - **Dates and times**:
-  - 10:00 to 17:00 TZ on TBD
-  - 10:00 to 17:00 TZ on TBD
-  - 10:00 to 16:00 TZ on TBD
+  - 10:00 to 17:00 TZ (IANA name here, e.g. Asia/Tokyo) on TBD
+  - 10:00 to 17:00 TZ (IANA name here, e.g. Asia/Tokyo) on TBD
+  - 10:00 to 16:00 TZ (IANA name here, e.g. Asia/Tokyo) on TBD
 - **Location**: CITY, COUNTRY
 - **Attendee information**: LINK TO REFLECTOR
+
+For meeting times in your timezone, visit [Temporal docs](https://tc39.es/proposal-temporal/docs/) and run the code below in the devtools console.
+
+```js
+// UPDATE THE START DATE AND IANA TIMEZONE NAME BELOW AND DELETE THIS COMMENT
+Temporal.ZonedDateTime.from('2021-10-25T10:00[Europe/London]')
+  .withTimeZone(Temporal.Now.timeZone()) // your time zone
+  .toLocaleString()
+```
 
 Background:
 - Allen Wirfs-Brock's [paper on standards committee participation for new attendees](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)

@@ -101,7 +101,18 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 
 ### Schedule constraints
 
+_Schedule constraints should be supplied here **48 hours** before the meeting begins so that the Chairs can take them into account when preparing the schedule._
+
 <!-- Be specific! Provide a full name, date and time range that they will or will not be available, and which sessions they are trying to prioritize. Satisfaction not guaranteed, but more information is useful. Conflicting constraints honored on a first-come, first served basis. -->
+
+#### Normal Constraints
+
+<!-- Constraints supplied more than 48 hours before the meeting should go here -->
+
+#### Late-breaking Schedule Constraints
+
+<!-- Constraints supplied less than 48 hours before the meeting should go here -->
+
 
 ## Dates and locations of future meetings
 

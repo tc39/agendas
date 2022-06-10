@@ -6,6 +6,7 @@ TC39 meeting agendas
 <details open>
 <summary>2022</summary>
 
+- [July](./2022/07.md)
 - [June](./2022/06.md)
 - [March](./2022/03.md)
 - [January](./2022/01.md)

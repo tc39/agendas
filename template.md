@@ -50,6 +50,7 @@ Supporting materials includes slides, a link to the proposal repository, a link 
     1. Host facilities, local logistics
     1. Quick recap of meeting IPR policy
     1. Overview of communication tools
+    1. Reminder to review Github Delegate teams (Jordan Harband)
 1. Find volunteers for note taking
 1. Adoption of the agenda
 1. Approval of the minutes from last meeting

@@ -22,7 +22,7 @@ Temporal.ZonedDateTime.from('2021-10-25T10:00[Europe/London]')
 
 Background:
 - Allen Wirfs-Brock's [paper on standards committee participation for new attendees](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)
-- TC39's documentation on [How to participate in meetings](https://github.com/tc39/how-we-work/blob/master/how-to-participate-in-meetings.md)
+- TC39's documentation on [How to participate in meetings](https://github.com/tc39/how-we-work/blob/HEAD/how-to-participate-in-meetings.md)
 
 ## Agenda topic rules
 

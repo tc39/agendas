@@ -3,6 +3,12 @@ agendas
 
 TC39 meeting agendas
 <!-- AGENDA_LIST:START (TC39) -->
+<details>
+<summary>2023</summary>
+
+- [January](./2023/01.md)
+</details>
+
 <details open>
 <summary>2022</summary>
 

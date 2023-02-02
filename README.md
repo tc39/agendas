@@ -2,6 +2,18 @@ agendas
 =======
 
 TC39 meeting agendas
+
+<details>
+<summary>Future Meetings</summary>
+
+| Confirmed | Future Dates             | Location            | Host                 |
+|-----------|--------------------------|---------------------|----------------------|
+|  ✔        | 2023-03-21 to 2023-03-23 | Seattle, US         | F5                   |
+|           | 2023-05-15 to 2023-05-18 | _Remote: "Chicago"_ |                      |
+|           | 2023-07-11 to 2023-07-13 | Bergen, Norway      | University of Bergen |
+|           | 2023-09-26 to 2023-09-28 | Tokyo, Japan        | Bloomberg            |
+|           | 2023-11-27 to 2023-11-30 | _Remote: "SF"_      |                      |
+</details>
 <!-- AGENDA_LIST:START (TC39) -->
 <details open>
 <summary>2023</summary>

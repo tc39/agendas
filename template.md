@@ -16,7 +16,7 @@ For meeting times in your timezone, visit [Temporal docs](https://tc39.es/propos
 ```js
 // UPDATE THE START DATE AND IANA TIMEZONE NAME BELOW AND DELETE THIS COMMENT
 Temporal.ZonedDateTime.from('2021-10-25T10:00[Europe/London]')
-  .withTimeZone(Temporal.Now.timeZone()) // your time zone
+  .withTimeZone(Temporal.Now.timeZoneId()) // your time zone
   .toLocaleString()
 ```
 

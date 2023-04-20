@@ -1,5 +1,4 @@
-
-<img src="../images/Ecma_RVB-003.jpg" align="right" height="70" alt="" />
+<img src="../images/Ecma_RVB-003.jpg" align="right" height="70" alt="Ecma logo" /> <!-- markdownlint-disable-line MD033 MD041 -->
 
 # Agenda for the TBD meeting of Ecma TC39
 
@@ -21,15 +20,17 @@ Temporal.ZonedDateTime.from('2021-10-25T10:00[Europe/London]')
 ```
 
 Background:
+
 - Allen Wirfs-Brock's [paper on standards committee participation for new attendees](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)
 - TC39's documentation on [How to participate in meetings](https://github.com/tc39/how-we-work/blob/HEAD/how-to-participate-in-meetings.md)
 
 ## Agenda topic rules
 
 Deadline for advancement eligibility: [**CALCULATE TIME HERE**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
-  - <sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub>
 
-1. Proposals not looking to advance may be added at any time; if after the deadline, please always use a pull request so that members are notified of changes. Note: an unmerged PR counts as ”added” for the purposes of this requirement.
+- <sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub> <!-- markdownlint-disable-line MD033 -->
+
+1. Proposals not looking to advance may be added at any time; if after the deadline, please always use a pull request so that members are notified of changes. Note: an unmerged PR counts as “added” for the purposes of this requirement.
 1. Proposals seeking feedback at stage 0 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
     1. Such proposals *should* include supporting materials when possible.
 1. Proposals looking to advance to stage 1 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
@@ -103,7 +104,7 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 
 ### Schedule constraints
 
-_Schedule constraints should be supplied here **48 hours** before the meeting begins so that the Chairs can take them into account when preparing the schedule._
+*Schedule constraints should be supplied here **48 hours** before the meeting begins so that the Chairs can take them into account when preparing the schedule.*
 
 <!-- Be specific! Provide a full name, date and time range that they will or will not be available, and which sessions they are trying to prioritize. Satisfaction not guaranteed, but more information is useful. Conflicting constraints honored on a first-come, first served basis. -->
 
@@ -114,7 +115,6 @@ _Schedule constraints should be supplied here **48 hours** before the meeting be
 #### Late-breaking Schedule Constraints
 
 <!-- Constraints supplied less than 48 hours before the meeting should go here -->
-
 
 ## Dates and locations of future meetings
 

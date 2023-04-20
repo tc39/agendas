@@ -34,8 +34,8 @@ Deadline for advancement eligibility: [**CALCULATE TIME HERE**](https://www.time
     1. Such proposals *should* include supporting materials when possible.
 1. Proposals looking to advance to stage 1 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
     1. Such proposals *must* link to a proposal repository and they *should* link to supporting materials when possible.
-1. Proposals looking to advance to stages 2, 3, or 4, as well as other normative changes to the standard or proposals in stage 3 or later looking to achieve consensus, must be added (and noted as such) *along with links to the necessary materials* prior to the deadline, or else delegates may withhold consensus solely on the basis of missing the deadline.
-    1. If the supporting materials change substantially after the deadline, the proposal may be disqualified from advancement, based on the committee’s judgment.
+1. Proposals looking to advance to stages 2, 3, or 4, as well as other normative changes to the standard or proposals in stage 3 or later looking to achieve consensus, must be added (and noted as such) *along with links to the necessary materials* prior to the deadline, or else delegates may withhold consensus for advancement solely on the basis of missing the deadline.
+    1. If the supporting materials change substantially after the deadline, delegates may withhold consensus for advancement, based on the committee’s judgment.
     1. For urgent normative changes, the committee is expected to be more forgiving of a missed deadline, since there is generally less material to review than in a stage advancement.
     1. Proposals looking to advance to stage 4 *must* link to a pull request into [the spec](https://github.com/tc39/ecma262), since the [process](https://tc39.github.io/process-document/) requires one.
 1. Proposal-based agenda items should be sorted primarily by stage (descending), secondarily by timebox (ascending), and finally by insertion date.

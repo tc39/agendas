@@ -43,6 +43,16 @@ Deadline for advancement eligibility: [**CALCULATE TIME HERE**](https://www.time
 
 Supporting materials includes slides, a link to the proposal repository, a link to spec text, etc.; essentially, anything you are planning to present to the committee, or that would be useful for delegates to review.
 
+## Agenda key
+
+When applicable, use these emoji as a prefix to the agenda item topic.
+
+| Emoji | Meaning                                                             |
+| :---: | :---                                                                |
+|  🔒   | schedule constraints apply to this agenda item                      |
+|  ⌛️   | late addition for stage advancement and/or schedule prioritization  |
+|  🔁   | continuation of a previous agenda item                              |
+
 ## Agenda items
 
 1. Opening, welcome and roll call (Chair)

@@ -5,3 +5,6 @@ default: true
 
 # MD013/line-length - Line length
 MD013: false
+
+# MD034/no-bare-urls - Bare URL
+MD034: false

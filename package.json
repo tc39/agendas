@@ -2,8 +2,9 @@
   "private": true,
   "scripts": {
     "build": "./scripts/generate.js",
-    "//": "lint command ignores old files",
-    "lint": "markdownlint-cli2 '**/*.md' '!node_modules' '!201*/*.md' '!202[0-2]/*.md'"
+    "//": "lint commands ignore old files",
+    "lint": "markdownlint-cli2 '**/*.md' '!node_modules' '!201*/*.md' '!202[0-2]/*.md'",
+    "lint:fix": "markdownlint-cli2-fix '**/*.md' '!node_modules' '!201*/*.md' '!202[0-2]/*.md'"
   },
   "devDependencies": {
     "dedent": "^0.7.0",

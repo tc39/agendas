@@ -3,7 +3,7 @@
   "scripts": {
     "build": "./scripts/generate.js",
     "//": "lint command ignores old files",
-    "lint": "markdownlint-cli2 \"**/*.md\" \"#node_modules\" \"#201[0-9]/*.md\" \"#202[0-2]/*.md\" \"#2023/01.md\""
+    "lint": "markdownlint-cli2 '**/*.md' '!node_modules' '!201*/*.md' '!202[0-2]/*.md'"
   },
   "devDependencies": {
     "dedent": "^0.7.0",

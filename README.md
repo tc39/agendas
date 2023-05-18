@@ -8,8 +8,7 @@ TC39 meeting agendas
 
 | Confirmed | Future Dates             | Location            | Host                 |
 |-----------|--------------------------|---------------------|----------------------|
-|  ✔        | 2023-05-15 to 2023-05-18 | _Remote: "Chicago"_ |                      |
-|           | 2023-07-11 to 2023-07-13 | Bergen, Norway      | University of Bergen |
+|  ✔        | 2023-07-11 to 2023-07-13 | Bergen, Norway      | University of Bergen |
 |           | 2023-09-26 to 2023-09-28 | Tokyo, Japan        | Bloomberg            |
 |  ✔        | 2023-11-27 to 2023-11-30 | _Remote: "SF"_      |                      |
 </details>
@@ -17,10 +16,10 @@ TC39 meeting agendas
 <details open>
 <summary>2023</summary>
 
+- [July](./2023/07.md)
 - [May](./2023/05.md)
 - [March](./2023/03.md)
 - [January](./2023/01.md)
-
 </details>
 
 <details>
@@ -32,7 +31,6 @@ TC39 meeting agendas
 - [June](./2022/06.md)
 - [March](./2022/03.md)
 - [January](./2022/01.md)
-
 </details>
 
 <details>
@@ -46,7 +44,6 @@ TC39 meeting agendas
 - [April](./2021/04.md)
 - [March](./2021/03.md)
 - [January](./2021/01.md)
-
 </details>
 
 <details>
@@ -58,7 +55,6 @@ TC39 meeting agendas
 - [June](./2020/06.md)
 - [March](./2020/03.md)
 - [February](./2020/02.md)
-
 </details>
 
 <details>
@@ -70,7 +66,6 @@ TC39 meeting agendas
 - [June](./2019/06.md)
 - [March](./2019/03.md)
 - [January](./2019/01.md)
-
 </details>
 
 <details>
@@ -82,7 +77,6 @@ TC39 meeting agendas
 - [May](./2018/05.md)
 - [March](./2018/03.md)
 - [January](./2018/01.md)
-
 </details>
 
 <details>
@@ -94,7 +88,6 @@ TC39 meeting agendas
 - [May](./2017/05.md)
 - [March](./2017/03.md)
 - [January](./2017/01.md)
-
 </details>
 
 <details>
@@ -106,7 +99,6 @@ TC39 meeting agendas
 - [May](./2016/05.md)
 - [March](./2016/03.md)
 - [January](./2016/01.md)
-
 </details>
 
 <details>
@@ -118,7 +110,6 @@ TC39 meeting agendas
 - [May](./2015/05.md)
 - [March](./2015/03.md)
 - [January](./2015/01.md)
-
 </details>
 
 <details>
@@ -130,7 +121,6 @@ TC39 meeting agendas
 - [June](./2014/06.md)
 - [April](./2014/04.md)
 - [January](./2014/01.md)
-
 </details>
 
 <details>
@@ -140,6 +130,5 @@ TC39 meeting agendas
 - [September](./2013/09.md)
 - [July](./2013/07.md)
 - [May](./2013/05.md)
-
 </details>
 <!-- AGENDA_LIST:END -->

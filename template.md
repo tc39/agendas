@@ -47,11 +47,12 @@ Supporting materials includes slides, a link to the proposal repository, a link 
 
 When applicable, use these emoji as a prefix to the agenda item topic.
 
-| Emoji | Meaning                                                             |
-| :---: | :---                                                                |
-|  🔒   | schedule constraints apply to this agenda item                      |
-|  ⌛️   | late addition for stage advancement and/or schedule prioritization  |
-|  🔁   | continuation of a previous agenda item                              |
+| Emoji | Meaning                                                              |
+| :---: | :---                                                                 |
+|  ❄️   | hard schedule constraints apply to this agenda item (e.g. presenter) |
+|  🔒   | schedule constraints apply to this agenda item                       |
+|  ⌛️   | late addition for stage advancement and/or schedule prioritization   |
+|  🔁   | continuation of a previous agenda item                               |
 
 ## Agenda items
 

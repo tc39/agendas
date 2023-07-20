@@ -8,14 +8,14 @@ TC39 meeting agendas
 
 | Confirmed | Future Dates             | Location            | Host                 |
 |-----------|--------------------------|---------------------|----------------------|
-|  ✔        | 2023-07-11 to 2023-07-13 | Bergen, Norway      | University of Bergen |
-|           | 2023-09-26 to 2023-09-28 | Tokyo, Japan        | Bloomberg            |
+|  ✔        | 2023-09-26 to 2023-09-28 | Tokyo, Japan        | Bloomberg            |
 |  ✔        | 2023-11-27 to 2023-11-30 | _Remote: "SF"_      |                      |
 </details>
 <!-- AGENDA_LIST:START (TC39) -->
 <details open>
 <summary>2023</summary>
 
+- [September](./2023/09.md)
 - [July](./2023/07.md)
 - [May](./2023/05.md)
 - [March](./2023/03.md)

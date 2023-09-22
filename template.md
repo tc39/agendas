@@ -12,12 +12,12 @@
 
 ```mermaid
 gantt
-  1 month before the meeting: milestone, 1969/12/01 10:00 +0000, 1m
-  Proposal advancement deadline : milestone, 1969/12/22 10:00 +0000, 1m
-  Day 1 : day1, 1970/01/01 10:00 +0000, 7h
-  Day 2 : day2, 1970/01/02 10:00 +0000, 7h
-  Day 3 : day3, 1970/01/03 10:00 +0000, 7h
-  Day 4 : day4, 1970/01/04 10:00 +0000, 7h
+  1 month before the meeting: milestone, 1969-12-01 10:00+0000, 1m
+  Proposal advancement deadline : milestone, 1969-12-22 10:00+0000, 1m
+  Day 1 : day1, 1970-01-01 10:00+0000, 7h
+  Day 2 : day2, 1970-01-02 10:00+0000, 7h
+  Day 3 : day3, 1970-01-03 10:00+0000, 7h
+  Day 4 : day4, 1970-01-04 10:00+0000, 7h
   todayMarker stroke-width:5px,stroke:#0f0,opacity:0.5
 ```
 

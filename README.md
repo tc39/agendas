@@ -15,6 +15,7 @@ TC39 meeting agendas
 <details open>
 <summary>2023</summary>
 
+- [November](./2023/11.md)
 - [September](./2023/09.md)
 - [July](./2023/07.md)
 - [May](./2023/05.md)

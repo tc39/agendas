@@ -142,7 +142,3 @@ When applicable, use these emoji as a prefix to the agenda item topic.
 #### Late-breaking Schedule Constraints
 
 <!-- Constraints supplied less than 48 hours before the meeting should go here -->
-
-## Dates and locations of future meetings
-
-TBD (Copy the table from the previous agenda)

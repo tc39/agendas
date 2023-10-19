@@ -1,15 +1,20 @@
-agendas
-=======
+# agendas
 
 TC39 meeting agendas
 
 <details>
 <summary>Future Meetings</summary>
 
-| Confirmed | Future Dates             | Location            | Host                 |
-|-----------|--------------------------|---------------------|----------------------|
-|  ✔        | 2023-09-26 to 2023-09-28 | Tokyo, Japan        | Bloomberg            |
-|  ✔        | 2023-11-27 to 2023-11-30 | _Remote: "SF"_      |                      |
+| Mtg Num | First Day    | Last Day     | Location                | Host                       |
+| :-----: | ------------ | ------------ | ----------------------- | -------------------------- |
+|  `99`   | `2023-11-27` | `2023-11-30` | _Remote: "SF"_          | _n/a_                      |
+|  `100`  | `2024-02-06` | `2024-02-08` | San Diego, US 🇺🇸🦅      | ServiceNow                 |
+|  `101`  | `2024‑04‑08` | `2024‑04‑11` | _Remote: "Baltimore"_   | _n/a_                      |
+|  `102`  | `2024‑06‑11` | `2024‑06‑13` | Helsinki, Finland 🇫🇮🦁  | Mozilla & Aalto University |
+|  `103`  | `2024‑07‑29` | `2024‑08‑01` | _Remote: "Los Angeles"_ | _n/a_                      |
+|  `104`  | `2024‑10‑08` | `2024‑10‑10` | Tokyo, Japan 🇯🇵🌸       | Sony                       |
+|  `105`  | `2024‑12‑02` | `2024‑12‑05` | _Remote: "Albuquerque"_ | _n/a_                      |
+
 </details>
 <!-- AGENDA_LIST:START (TC39) -->
 <details open>

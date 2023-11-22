@@ -131,7 +131,7 @@ When applicable, use these emoji as a prefix to the agenda item topic.
 
 ### Schedule constraints
 
-*Schedule constraints should be supplied here **48 hours** before the meeting begins so that the Chairs can take them into account when preparing the schedule.*
+*Schedule constraints should be supplied here as soon as possible, and **at least 72 hours** before the meeting begins so that the Chairs can take them into account when preparing the schedule.*
 
 <!-- DO NOT PUT YOUR CONSTRAINTS HERE! Put them in one of the next sections: either "Normal Constraints" or "Late-breaking Schedule Constraints" -->
 

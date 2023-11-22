@@ -101,8 +101,6 @@ When applicable, use these emoji as a prefix to the agenda item topic.
     | ✓ | timebox | topic | presenter |
     |:-:|:-------:|-------|-----------|
 
-1. Incubation call chartering (15m on the last day)
-
 1. Short (&le;30m) Timeboxed Discussions
 
     | ✓ | timebox | topic | presenter |
@@ -124,6 +122,8 @@ When applicable, use these emoji as a prefix to the agenda item topic.
 
     | ✓ | topic | presenter |
     |:-:|-------|-----------|
+
+1. Incubation call chartering (15m on the last day)
 
 1. Other business
     1. Thank host

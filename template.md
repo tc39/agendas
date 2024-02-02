@@ -1,6 +1,6 @@
 <img src="../images/Ecma_RVB-003.jpg" align="right" height="70" alt="Ecma logo" /> <!-- markdownlint-disable-line MD041 -->
 
-# Agenda for the TBD meeting of Ecma TC39
+# Agenda for the TBDth meeting of Ecma TC39
 
 - **Host**: TBD
 - **Dates and times**:
@@ -13,7 +13,8 @@
 ```mermaid
 gantt
   1 month before the meeting: milestone, 1969-12-01 10:00+0000, 1m
-  Proposal advancement deadline : milestone, 1969-12-22 10:00+0000, 1m
+  Proposal advancement deadline: milestone, 1969-12-22 10:00+0000, 1m
+  Schedule constraint deadline: milestone, 1969-12-29 10:00+0000, 1m
   Day 1 : day1, 1970-01-01 10:00+0000, 7h
   Day 2 : day2, 1970-01-02 10:00+0000, 7h
   Day 3 : day3, 1970-01-03 10:00+0000, 7h
@@ -131,7 +132,7 @@ When applicable, use these emoji as a prefix to the agenda item topic.
 
 ### Schedule constraints
 
-*Schedule constraints should be supplied here as soon as possible, and **at least 72 hours** before the meeting begins so that the Chairs can take them into account when preparing the schedule.*
+*Schedule constraints should be supplied here as soon as possible, and **at least three days** before the meeting begins so that the Chairs can take them into account when preparing the schedule.*
 
 <!-- DO NOT PUT YOUR CONSTRAINTS HERE! Put them in one of the next sections: either "Normal Constraints" or "Late-breaking Schedule Constraints" -->
 
@@ -139,8 +140,8 @@ When applicable, use these emoji as a prefix to the agenda item topic.
 
 #### Normal Constraints
 
-<!-- Constraints supplied more than 48 hours before the meeting should go here -->
+<!-- Constraints supplied more than three days before the meeting should go here -->
 
 #### Late-breaking Schedule Constraints
 
-<!-- Constraints supplied less than 48 hours before the meeting should go here -->
+<!-- Constraints supplied less than three days before the meeting should go here -->

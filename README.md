@@ -1,9 +1,6 @@
-# agendas
+# TC39 meeting agendas
 
-TC39 meeting agendas
-
-<details>
-<summary>Future Meetings</summary>
+## Future Meeting Locations and Hosts
 
 | Mtg Num | First Day    | Last Day     | Location                | Host                       |
 | :-----: | ------------ | ------------ | ----------------------- | -------------------------- |
@@ -13,7 +10,8 @@ TC39 meeting agendas
 |  `104`  | `2024‑10‑08` | `2024‑10‑10` | Tokyo, Japan 🇯🇵🌸       | Sony                       |
 |  `105`  | `2024‑12‑02` | `2024‑12‑05` | _Remote: "Albuquerque"_ | _n/a_                      |
 
-</details>
+## Agendas
+
 <!-- AGENDA_LIST:START (TC39) -->
 <details open>
 <summary>2024</summary>

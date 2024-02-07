@@ -7,7 +7,6 @@ TC39 meeting agendas
 
 | Mtg Num | First Day    | Last Day     | Location                | Host                       |
 | :-----: | ------------ | ------------ | ----------------------- | -------------------------- |
-|  `100`  | `2024-02-06` | `2024-02-08` | San Diego, US 🇺🇸🦅      | ServiceNow                 |
 |  `101`  | `2024‑04‑08` | `2024‑04‑11` | _Remote: "Baltimore"_   | _n/a_                      |
 |  `102`  | `2024‑06‑11` | `2024‑06‑13` | Helsinki, Finland 🇫🇮🦁  | Mozilla & Aalto University |
 |  `103`  | `2024‑07‑29` | `2024‑08‑01` | _Remote: "Los Angeles"_ | _n/a_                      |

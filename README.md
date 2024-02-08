@@ -1,4 +1,4 @@
-# TC39 meeting agendas
+# TC39 Meeting Agendas
 
 ## Future Meeting Locations and Hosts
 

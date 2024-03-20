@@ -13,4 +13,3 @@ jobs:
       - uses: ljharb/actions/node/install@main
         name: 'nvm install lts/* && npm install'
       - run: npm run lint
-

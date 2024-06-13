@@ -15,6 +15,7 @@
 <details open>
 <summary>2024</summary>
 
+- [July](./2024/07.md)
 - [June](./2024/06.md)
 - [April](./2024/04.md)
 - [February](./2024/02.md)

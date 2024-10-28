@@ -8,9 +8,9 @@
 |  `106`  | `2025‑02‑18` | `2025‑02‑20` | Seattle, US             | F5                         |
 |  `107`  | `2025‑04‑14` | `2025‑04‑17` | _Remote "Miami"_        | _n/a_                      |
 |  `108`  | `2025‑06‑TBD`| `2025‑06‑TBD`| A Coruña, Spain         | Igalia                     |
-|  `109`  | `2025‑07‑28` | `2025‑07-31` | _Remote "Beaverton"_    | _n/a_                      |
-|  `110`  | `2025‑09-22` | `2025‑09-25` | _Remote "New Orleans"_  | _n/a_                      |
-|  `111`  | `2025‑11-18` | `2025‑11-20` | Tokyo, Japan            | Bloomberg                  |
+|  `109`  | `2025‑07‑28` | `2025‑07‑31` | _Remote "Beaverton"_    | _n/a_                      |
+|  `110`  | `2025‑09‑22` | `2025‑09‑25` | _Remote "New Orleans"_  | _n/a_                      |
+|  `111`  | `2025‑11‑18` | `2025‑11‑20` | Tokyo, Japan            | Bloomberg                  |
 
 ## Agendas
 

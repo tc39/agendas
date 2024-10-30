@@ -103,7 +103,7 @@ When applicable, use these emoji as a prefix to the agenda item topic.
     | timebox | topic | presenter |
     |:-------:|-------|-----------|
 
-1. Short (&le;30m) Timeboxed Discussions
+1. Short (≤30m) Timeboxed Discussions
 
     | timebox | topic | presenter |
     |:-------:|-------|-----------|

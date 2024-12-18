@@ -4,7 +4,6 @@
 
 | Mtg Num | First Day    | Last Day     | Location                | Host                       |
 | :-----: | ------------ | ------------ | ----------------------- | -------------------------- |
-|   105   | `2024‑12‑02` | `2024‑12‑05` | _Remote: "Albuquerque"_ | _n/a_                      |
 |   106   | `2025‑02‑18` | `2025‑02‑20` | Seattle, US             | F5                         |
 |   107   | `2025‑04‑14` | `2025‑04‑17` | _Remote "Miami"_        | _n/a_                      |
 |   108   | `2025‑05-28` | `2025‑05-30` | A Coruña, Spain         | Igalia                     |
@@ -16,6 +15,13 @@
 
 <!-- AGENDA_LIST:START (TC39) -->
 <details open>
+<summary>2025</summary>
+
+- [February](./2025/02.md)
+
+</details>
+
+<details>
 <summary>2024</summary>
 
 - [December](./2024/12.md)

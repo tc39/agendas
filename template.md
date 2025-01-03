@@ -9,6 +9,7 @@
   - 10:00 to 16:00 TZ (IANA name here, e.g. Asia/Tokyo) on TBD
 - **Location**: CITY, COUNTRY
 - **Attendee information**: LINK TO REFLECTOR
+- **Total duration of scheduled discussions**: ![dynamically computed total of timeboxes on the agenda](https://tc39-agenda-time.deno.dev/YYYY/MM/) <!-- UPDATE YYYY AND MM -->
 
 ```mermaid
 gantt

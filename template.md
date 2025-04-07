@@ -45,6 +45,8 @@ Add your item to the agenda ahead of the agenda deadline, including linking to s
 
 Adding your item ahead of the agenda deadline gives delegates the chance to think things over and discuss with others who won't be attending the meeting themselves, to be able to bring their opinions in. Late additions can be considered, but they are less likely to reach consensus, due to this need.
 
+The TC39 agenda items about proposals are sorted primarily by stage (descending), secondarily by timebox (ascending), and finally by insertion date. Items may be reordered by chairs when running the meeting based on various constraints.
+
 For more information, see [agenda topics best practices](https://github.com/tc39/how-we-work/blob/main/agenda.md) from the TC39 how-we-work guide.
 
 ## Agenda key

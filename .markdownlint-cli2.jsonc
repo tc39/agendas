@@ -1,0 +1,10 @@
+{
+  "globs": [
+    "**/*.md"
+  ],
+  "ignores": [  // ignore old files
+    "node_modules/**",
+    "201*/*.md",
+    "202[0-2]/*.md"
+  ]
+}

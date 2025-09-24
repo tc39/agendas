@@ -4,7 +4,6 @@
 
 | Mtg Num | First Day    | Last Day     | Location                | Host                       |
 | :-----: | ------------ | ------------ | ----------------------- | -------------------------- |
-|   110   | `2025‑09‑22` | `2025‑09‑25` | _Remote "New Orleans"_  ⚜️   | _n/a_                      |
 |   111   | `2025‑11‑18` | `2025‑11‑20` | Tokyo, Japan  🌸           | Bloomberg                  |
 
 ## Agendas
@@ -13,6 +12,7 @@
 <details open>
 <summary>2025</summary>
 
+- [November](./2025/11.md)
 - [September](./2025/09.md)
 - [July](./2025/07.md)
 - [May](./2025/05.md)

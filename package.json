@@ -4,14 +4,14 @@
     "build": "./scripts/generate.js",
     "//": "lint commands ignore old files",
     "lint": "markdownlint-cli2 '**/*.md' '!node_modules' '!201*/*.md' '!202[0-2]/*.md'",
-    "lint:fix": "markdownlint-cli2-fix '**/*.md' '!node_modules' '!201*/*.md' '!202[0-2]/*.md'",
+    "lint:fix": "markdownlint-cli2 --fix '**/*.md' '!node_modules' '!201*/*.md' '!202[0-2]/*.md'",
     "test": "npm run lint"
   },
   "devDependencies": {
     "dedent": "^0.7.0",
     "glob": "^7.2.3",
     "markdown-magic": "^0.1.25",
-    "markdownlint-cli2": "^0.7.1",
+    "markdownlint-cli2": "^0.18.1",
     "marked": "^12.0.1"
   }
 }

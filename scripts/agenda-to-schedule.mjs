@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // ye olde rudimentary script to convert agenda-formatted topics to schedule-formatted topics
-// example: node agenda-to-schedule.mjs "../2024/04.md"
+// example: npm run a2s "./2025/09.md"
 
 import { marked } from 'marked';
 import fs from 'fs';
@@ -16,7 +16,7 @@ const tokenTypeEnum = Object.freeze({
   TEXT: 'text',
 });
 
-const reTimebox = /(\dh)?\d+m/;
+const reTimebox = /\b(\dh)?\d+m\b/;
 const agendaFile = argv[2];
 const contents = fs.readFileSync(agendaFile, 'utf8').toString();
 const rootTokens = marked.lexer(contents, { ...marked.getDefaults(), });

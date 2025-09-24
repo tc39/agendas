@@ -1,6 +1,7 @@
 {
   "private": true,
   "scripts": {
+    "a2s": "node ./scripts/agenda-to-schedule.mjs",
     "build": "./scripts/generate.js",
     "lint": "markdownlint-cli2",
     "lint:fix": "markdownlint-cli2 --fix",

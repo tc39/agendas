@@ -1,0 +1,17 @@
+name: 'Build'
+
+on: [pull_request, push]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: ljharb/actions/node/install@main
+        name: 'nvm install lts/* && npm install'
+      - run: npm run build  
+            #  we could add this to package.json test script but it potentially modifies the README
+            #  for now let's just make sure it runs without error in CI

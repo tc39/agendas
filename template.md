@@ -37,24 +37,17 @@ Background:
 - Allen Wirfs-Brock's [paper on standards committee participation for new attendees](http://wirfs-brock.com/allen/files/papers/standpats-asianplop2016.pdf)
 - TC39's documentation on [How to participate in meetings](https://github.com/tc39/how-we-work/blob/HEAD/how-to-participate-in-meetings.md)
 
-## Agenda topic rules
+## Agenda deadline
 
-Deadline for advancement eligibility: [**CALCULATE TIME HERE**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
+Add your item to the agenda ahead of the agenda deadline, including linking to supporting materials (e.g., slides, README, spec text if applicable): [**CALCULATE TIME HERE**](https://www.timeanddate.com/countdown/generic?p0=1440&iso=20000101T18&msg=TC39%20Submission%20deadline)
 
 - <sub>Note: this time is selected to be precisely 10 days prior to the start of the meeting</sub>
 
-1. Proposals not looking to advance may be added at any time; if after the deadline, please always use a pull request so that members are notified of changes. Note: an unmerged PR counts as “added” for the purposes of this requirement.
-1. Proposals seeking feedback at stage 0 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
-    1. Such proposals *should* include supporting materials when possible.
-1. Proposals looking to advance to stage 1 must be added (and noted as such) prior to the deadline, or else delegates may object to advancement solely on the basis of missing the deadline.
-    1. Such proposals *must* link to a proposal repository and they *should* link to supporting materials when possible.
-1. Proposals looking to advance to stages 2, 2.7, 3, or 4, as well as other normative changes to the standard or proposals in stage 3 or later looking to achieve consensus, must be added (and noted as such) *along with links to the supporting materials* prior to the deadline, or else delegates may withhold consensus for advancement solely on the basis of missing the deadline.
-    1. If the supporting materials change substantially after the deadline, delegates may withhold consensus for advancement, based on the committee’s judgment.
-    1. For urgent normative changes, the committee is expected to be more forgiving of a missed deadline, since there is generally less material to review than in a stage advancement.
-    1. Proposals looking to advance to stage 4 *must* link to a pull request into [the spec](https://github.com/tc39/ecma262), since the [process](https://tc39.github.io/process-document/) requires one.
-1. Proposal-based agenda items should be sorted primarily by stage (descending), secondarily by timebox (ascending), and finally by insertion date.
+Adding your item ahead of the agenda deadline gives delegates the chance to think things over and discuss with others who won't be attending the meeting themselves, to be able to bring their opinions in. Late additions can be considered, but they are less likely to reach consensus, due to this need.
 
-Supporting materials includes slides, a link to the proposal repository, a link to spec text, etc.; essentially, anything you are planning to present to the committee, or that would be useful for delegates to review.
+The TC39 agenda items about proposals are sorted primarily by stage (descending), secondarily by timebox (ascending), and finally by insertion date. Items may be reordered by chairs when running the meeting based on various constraints.
+
+For more information, see [agenda topics best practices](https://github.com/tc39/how-we-work/blob/main/agenda.md) from the TC39 how-we-work guide.
 
 ## Agenda key
 

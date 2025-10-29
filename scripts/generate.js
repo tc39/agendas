@@ -4,7 +4,7 @@
 
 const glob = require('glob');
 const path = require('path');
-const magic = require('markdown-magic');
+const { markdownMagic: magic } = require('markdown-magic');
 const dedent = require('dedent');
 
 const root = path.join(__dirname, '..');

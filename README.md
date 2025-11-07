@@ -2,15 +2,15 @@
 
 ## Future Meeting Locations and Hosts
 
-| Mtg num | First day    | Last day     | Location                               | Time zone                           | Host                             |
-| :-----: | ------------ | ------------ | -------------------------------------- | ----------------------------------- | -------------------------------- |
-|   111   | `2025‑11‑18` | `2025‑11‑20` | Tokyo &nbsp; 🌸                        | `Asia/Tokyo` (UTC +9)               | Bloomberg                        |
-|   112   | `2026‑01-20` | `2026‑01-22` | Remote &nbsp; 💻                       | `America/Port-au-Prince` (UTC -5)   | _n/a_                            |
-|   113   | `2026‑03-10` | `2026‑03-12` | New York City &nbsp; 🗽                | `America/New_York` (UTC -4)         | Google                           |
-|   114   | `2026‑05-19` | `2026‑05-21` | Amsterdam &nbsp; 🌷                    | `Europe/Amsterdam` (UTC +2)         | JetBrains                        |
-|   115   | _July_       |              | Remote &nbsp; 💻                       | `America/Eirunepe` (UTC -5)         | _n/a_                            |
-|   116   | TBD          |              | Tokyo &nbsp; ⛩️ or Remote &nbsp; 💻 \* | `Asia/Tokyo` or `Pacific/Easter` &nbsp; 🗿 | Sony Interactive Entertainment\* |
-|   117   | TBD          |              | Tokyo &nbsp; ⛩️ or Remote &nbsp; 💻 \* | `Asia/Tokyo` or `Pacific/Easter` &nbsp; 🗿 | Sony Interactive Entertainment\* |
+| Mtg num | First day    | Last day     | Location                | Time zone                           | Host                           |
+| :-----: | ------------ | ------------ | ----------------------- | ----------------------------------- | ------------------------------ |
+|   111   | `2025‑11‑18` | `2025‑11‑20` | Tokyo &nbsp; 🌸         | `Asia/Tokyo` (UTC +9)               | Bloomberg                      |
+|   112   | `2026‑01-20` | `2026‑01-22` | Remote &nbsp; 💻        | `America/Port-au-Prince` (UTC -5)   | _n/a_                          |
+|   113   | `2026‑03-10` | `2026‑03-12` | New York City &nbsp; 🗽 | `America/New_York` (UTC -4)         | Google                         |
+|   114   | `2026‑05-19` | `2026‑05-21` | Amsterdam &nbsp; 🌷     | `Europe/Amsterdam` (UTC +2)         | JetBrains                      |
+|   115   | `2026‑07-20` | `2026‑07-23` | Remote &nbsp; 💻        | `America/Eirunepe` (UTC -5)         | _n/a_                          |
+|   116   | `2026‑09-29` | `2026‑10-01` | Tokyo &nbsp; ⛩️         | `Asia/Tokyo` (UTC +9)               | Sony Interactive Entertainment |
+|   117   | `2026‑11-30` | `2026‑12-03` | Remote &nbsp; 💻        | `Pacific/Easter` &nbsp; 🗿 (UTC -6) | _n/a_                          |
 
 > [!IMPORTANT]  
 > \* One of the last two meetings of the year will by a hybrid meeting in Tokyo hosted by Sony Interactive Entertainment. The other meeting will be remote.

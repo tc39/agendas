@@ -12,9 +12,6 @@
 |   116   | `2026‑09-29` | `2026‑10-01` | Tokyo &nbsp; ⛩️         | `Asia/Tokyo` (UTC +9)               | Sony Interactive Entertainment |
 |   117   | `2026‑11-30` | `2026‑12-03` | Remote &nbsp; 💻        | `Pacific/Easter` &nbsp; 🗿 (UTC -6) | _n/a_                          |
 
-> [!IMPORTANT]  
-> \* One of the last two meetings of the year will by a hybrid meeting in Tokyo hosted by Sony Interactive Entertainment. The other meeting will be remote.
-
 ## Agendas
 
 <!-- AGENDA_LIST:START (TC39) -->

@@ -43,6 +43,7 @@ function processToken(t) {
     case tokenTypeEnum.TABLE:
       t.rows.forEach(processRow);
       break;
+    case tokenTypeEnum.PARAGRAPH:
     case tokenTypeEnum.TEXT:
       if (reTimebox.test(t.text)){
         // 🐽 smells like a topic

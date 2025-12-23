@@ -16,6 +16,13 @@
 
 <!-- AGENDA_LIST:START (TC39) -->
 <details open>
+<summary>2026</summary>
+
+- [January](./2026/01.md)
+
+</details>
+
+<details>
 <summary>2025</summary>
 
 - [November](./2025/11.md)

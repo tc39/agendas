@@ -4,7 +4,6 @@
 
 | Mtg num | First day    | Last day     | Location                | Time zone                           | Host                           |
 | :-----: | ------------ | ------------ | ----------------------- | ----------------------------------- | ------------------------------ |
-|   112   | `2026‑01-20` | `2026‑01-21` | Remote &nbsp; 💻        | EST (America/Port-au-Prince, UTC -5)     | _n/a_                          |
 |   113   | `2026‑03-10` | `2026‑03-12` | New York City &nbsp; 🗽 | EDT (America/New_York, UTC -4)           | Google                         |
 |   114   | `2026‑05-19` | `2026‑05-21` | Amsterdam &nbsp; 🌷     | CEST (Europe/Amsterdam, UTC +2)          | JetBrains                      |
 |   115   | `2026‑07-20` | `2026‑07-23` | Remote &nbsp; 💻        | ACT (America/Eirunepe, UTC -5)           | _n/a_                          |
@@ -17,6 +16,7 @@
 <details open>
 <summary>2026</summary>
 
+- [March](./2026/03.md)
 - [January](./2026/01.md)
 
 </details>

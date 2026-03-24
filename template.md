@@ -23,7 +23,7 @@ gantt
   todayMarker stroke-width:5px,stroke:#0f0,opacity:0.5
 ```
 
-For meeting times in your timezone, visit [Temporal docs](https://tc39.es/proposal-temporal/docs/) and run the code below in the devtools console.
+For meeting times in your timezone, run the code below in your browser dev tools console.
 
 ```js
 // UPDATE THE START DATE AND IANA TIMEZONE NAME BELOW AND DELETE THIS COMMENT

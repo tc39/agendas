@@ -10,6 +10,7 @@
 - **Location**: CITY, COUNTRY
 - **Attendee information**: LINK TO REFLECTOR
 - **Total duration of scheduled discussions**: ![dynamically computed total of timeboxes on the agenda](https://tc39-agenda-time.deno.dev/YYYY/MM/) <!-- UPDATE YYYY AND MM -->
+  - **Estimated meeting capacity**: CHOOSE ONE <!-- in person: 17:00h ; remote: 16:00h -- this is computed subtracting 100min per day for in-person meetings, and 60min per day for remote meetings --> <sub>This is an <em>estimate</em>: if you want to add a topic to the agenda, do not let this number stop you!</sub>
 
 ```mermaid
 gantt

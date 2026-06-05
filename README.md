@@ -4,7 +4,6 @@
 
 | Mtg num | First day    | Last day     | Location                | Time zone                           | Host                           |
 | :-----: | ------------ | ------------ | ----------------------- | ----------------------------------- | ------------------------------ |
-|   114   | `2026‑05-19` | `2026‑05-21` | Amsterdam &nbsp; 🌷     | CEST (Europe/Amsterdam, UTC +2)          | JetBrains                      |
 |   115   | `2026‑07-20` | `2026‑07-23` | Remote &nbsp; 💻        | ACT (America/Eirunepe, UTC -5)           | _n/a_                          |
 |   116   | `2026‑09-29` | `2026‑10-01` | Tokyo &nbsp; ⛩️         | JST (Asia/Tokyo, UTC +9)                 | Sony Interactive Entertainment |
 |   117   | `2026‑11-30` | `2026‑12-03` | Remote &nbsp; 💻        | EASST (Pacific/Easter &nbsp; 🗿, UTC -6) | _n/a_                          |

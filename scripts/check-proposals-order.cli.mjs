@@ -29,6 +29,7 @@
 
 import { execFileSync } from 'child_process';
 import fs from 'fs';
+import { parseArgs } from 'util';
 
 import { checkFile } from './check-proposals-order.mjs';
 
@@ -78,22 +79,20 @@ function escapeAnnotationProperty(text) {
 // setting the code rather than calling process.exit lets buffered annotation
 // output flush before the process ends (it can be truncated otherwise in CI)
 (() => {
-  const options = { base: null, head: null, strict: false, files: [] };
-  const argv = process.argv.slice(2);
-  for (let i = 0; i < argv.length; i++) {
-    switch (argv[i]) {
-      case '--base':
-        options.base = argv[++i];
-        break;
-      case '--head':
-        options.head = argv[++i];
-        break;
-      case '--strict':
-        options.strict = true;
-        break;
-      default:
-        options.files.push(argv[i]);
-    }
+  let options, positionals;
+  try {
+    ({ values: options, positionals } = parseArgs({
+      options: {
+        base: { type: 'string' },
+        head: { type: 'string' },
+        strict: { type: 'boolean', default: false },
+      },
+      allowPositionals: true,
+    }));
+  } catch (error) {
+    console.error(error.message);
+    process.exitCode = 2;
+    return;
   }
   if (options.base == null) {
     console.error(
@@ -123,7 +122,7 @@ function escapeAnnotationProperty(text) {
     // e.g. shallow history; fall back to the base ref itself
   }
 
-  let files = options.files;
+  let files = positionals;
   if (files.length === 0) {
     const diffArgs = [
       'diff',

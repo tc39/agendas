@@ -1,0 +1,24 @@
+name: 'Check proposals table order'
+
+on:
+  pull_request:
+    paths:
+      - '[0-9][0-9][0-9][0-9]/[0-9][0-9].md'
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+        with:
+          #  full history so the script can diff against the fork point,
+          #  however far back the PR branched
+          fetch-depth: 0
+      - uses: ljharb/actions/node/install@main
+        name: 'nvm install lts/* && npm install'
+      - run: node ./scripts/check-proposals-order.mjs --base "$BASE_SHA"
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}

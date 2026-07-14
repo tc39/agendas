@@ -90,7 +90,7 @@ export function parseTimebox(cell) {
 // was edited (e.g. a slides link was added)
 function firstTopicUrl(cells) {
   const match = /\]\(\s*<?([^)>\s]+)/.exec(cells[2] ?? '');
-  return match == null ? null : match[1];
+  return match?.[1];
 }
 
 // finds every proposals table: a `| stage | timebox | topic | presenter |`

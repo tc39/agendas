@@ -56,7 +56,7 @@ function firstTopicUrl(cells) {
 // finds every proposals table: a `| stage | timebox | topic | presenter |`
 // header (the only 4-column table in an agenda) followed by a delimiter row
 export function parseProposalsTables(contents) {
-  const lines = contents.replace(/\r\n/g, '\n').split('\n');
+  const lines = contents.split(/\r?\n/g);
   const tables = [];
   for (let i = 0; i < lines.length - 1; i++) {
     if (!/^\s*\|/.test(lines[i])) continue;

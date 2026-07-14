@@ -88,6 +88,7 @@ function escapeAnnotationProperty(text) {
         strict: { type: 'boolean', default: false },
       },
       allowPositionals: true,
+      allowNegative: true,
     }));
   } catch (error) {
     console.error(error.message);

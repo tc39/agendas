@@ -5,11 +5,16 @@
 // secondarily by timebox (ascending), and finally by insertion date.
 //
 // Problems are reported as GitHub workflow-command annotations (::error /
-// ::warning), which render inline on the PR diff; by default the script does
-// not fail for ordering problems, exiting non-zero only for usage or
-// environment errors. Pass --strict to exit 1 when any error-severity
-// problem is found (warnings never affect the exit code), for use in CI that
-// should block merging.
+// ::warning), which render inline on the PR diff. Exit codes:
+//   0  ran cleanly, or found only advisory ordering problems
+//   1  found error-severity ordering problems and --strict was passed
+//   2  could not run: bad usage, an unresolvable ref, an unreadable file, or
+//      a changed agenda document with no proposals table to check
+// Ordering problems do not fail the check by default so that we can gain
+// confidence in the absence of false positives before passing --strict to
+// block merging. A missing proposals table is not an ordering problem but a
+// failure to run — the table was renamed, moved, or its structure drifted
+// enough to break matching — so it always exits non-zero, --strict or not.
 //
 // The check is diff-aware: it compares against a base commit so that
 //   - violations already present in the base branch are tolerated (they are
@@ -40,16 +45,21 @@ import { pathToFileURL } from 'url';
 const HEADER_CELLS = ['stage', 'timebox', 'topic', 'presenter'];
 const AGENDA_PATH_PATTERN = /^\d{4}\/\d{2}\.md$/;
 
-// annotation severity per violation kind; purely presentational, since the
-// script never fails CI for ordering problems. Reordering rows of equal stage
-// and timebox may be a deliberate correction of a past mistake, which the
-// check cannot distinguish, so it only warrants a warning.
+// annotation severity per problem kind. For ordering violations this is
+// presentational, since they only fail CI under --strict; reordering rows of
+// equal stage and timebox may be a deliberate correction of a past mistake,
+// which the check cannot distinguish, so it only warrants a warning.
 const SEVERITY = {
   stage: 'error',
   timebox: 'error',
   insertion: 'error',
   reorder: 'warning',
+  'missing-table': 'error',
 };
+
+// kinds that mean the check could not run against a file rather than that it
+// found a violation; these fail the run unconditionally, even without --strict
+const RUN_FAILURE_KINDS = new Set(['missing-table']);
 
 // ---------- parsing ----------
 
@@ -262,6 +272,17 @@ function coalesceViolations(violations, baseRows, headRows, headToBase) {
 
 export function checkFile(baseContents, headContents) {
   const headTables = parseProposalsTables(headContents);
+  // Every current agenda document has a proposals table (it is in the
+  // template), and edits are made to the upcoming meeting's document, so a
+  // changed document without one means the table structure drifted and our
+  // matching silently broke. Report it rather than passing vacuously.
+  if (headTables.length === 0) {
+    return [{
+      kind: 'missing-table',
+      line: null,
+      message: 'No proposals table (a "| stage | timebox | topic | presenter |" table) was found, so its ordering could not be checked. If the table was renamed, moved, or its columns changed, update scripts/check-proposals-order.mjs to match.',
+    }];
+  }
   const baseTables = baseContents == null ? [] : parseProposalsTables(baseContents);
   const annotations = [];
   // pair base and head tables by order of appearance; an unpaired head table
@@ -349,6 +370,7 @@ function main() {
   }
 
   let errorCount = 0;
+  let runFailed = false;
   for (const file of files) {
     const baseContents = tryGitShow(base, file);
     let headContents;
@@ -368,15 +390,25 @@ function main() {
     }
     const annotations = checkFile(baseContents, headContents);
     for (const { kind, line, message } of annotations) {
-      if (SEVERITY[kind] === 'error') errorCount++;
-      console.log(`::${SEVERITY[kind]} file=${escapeAnnotationProperty(file)},line=${line},title=Proposals table ordering::${escapeAnnotationData(message)}`);
+      if (RUN_FAILURE_KINDS.has(kind)) runFailed = true;
+      else if (SEVERITY[kind] === 'error') errorCount++;
+      const title = RUN_FAILURE_KINDS.has(kind) ? 'Proposals table not found' : 'Proposals table ordering';
+      // a run-failure annotation has no row to anchor to, so it is file-level
+      const location = line == null
+        ? `file=${escapeAnnotationProperty(file)}`
+        : `file=${escapeAnnotationProperty(file)},line=${line}`;
+      console.log(`::${SEVERITY[kind]} ${location},title=${title}::${escapeAnnotationData(message)}`);
     }
     if (annotations.length === 0) {
       console.error(`OK: ${file}`);
+    } else if (annotations.some(annotation => RUN_FAILURE_KINDS.has(annotation.kind))) {
+      console.error(`Could not check ${file}: no proposals table found.`);
     } else {
       console.error(`${annotations.length} ordering problem(s) introduced in ${file}`);
     }
   }
+  // a failure to run takes precedence over ordering violations
+  if (runFailed) process.exit(2);
   if (options.strict && errorCount > 0) process.exit(1);
 }
 

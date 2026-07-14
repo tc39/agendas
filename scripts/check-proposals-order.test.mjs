@@ -36,6 +36,21 @@ function agenda(...rows) {
   ].join('\n');
 }
 
+// an agenda document whose proposals table our matcher would not find, e.g.
+// because its structure drifted (here, the header columns were renamed)
+function agendaWithoutProposals() {
+  return [
+    '## Agenda items',
+    '',
+    '1. Proposals',
+    '',
+    '    | stage | duration | topic | presenter |',
+    '    |:-----:|:--------:|-------|-----------|',
+    '    | 1 | 30m | [A](https://example.com/a) | Alice |',
+    '',
+  ].join('\n');
+}
+
 function proposalRows(contents) {
   const tables = parseProposalsTables(contents);
   assert.equal(tables.length, 1);
@@ -287,6 +302,23 @@ test('a brand-new agenda document gets the static checks only', () => {
     '| 1 | 30m | [C](https://example.com/c) | Carol |',
   ));
   assert.deepEqual(clean, []);
+});
+
+test('a changed document with no findable proposals table reports a run failure', () => {
+  const annotations = checkFile(agenda('| 1 | 30m | [A](https://example.com/a) | Alice |'), agendaWithoutProposals());
+  assert.equal(annotations.length, 1);
+  assert.equal(annotations[0].kind, 'missing-table');
+  assert.equal(annotations[0].line, null);
+});
+
+test('a brand-new document with no findable proposals table reports a run failure', () => {
+  const annotations = checkFile(null, agendaWithoutProposals());
+  assert.equal(annotations.length, 1);
+  assert.equal(annotations[0].kind, 'missing-table');
+});
+
+test('an empty table fresh from the template is found, not a run failure', () => {
+  assert.deepEqual(checkFile(null, agenda()), []);
 });
 
 test('insertion violations report the new row, not the existing one', () => {

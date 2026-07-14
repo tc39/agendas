@@ -71,89 +71,101 @@ function escapeAnnotationProperty(text) {
   return escapeAnnotationData(text).replace(/:/g, '%3A').replace(/,/g, '%2C');
 }
 
-const options = { base: null, head: null, strict: false, files: [] };
-const argv = process.argv.slice(2);
-for (let i = 0; i < argv.length; i++) {
-  switch (argv[i]) {
-    case '--base': options.base = argv[++i]; break;
-    case '--head': options.head = argv[++i]; break;
-    case '--strict': options.strict = true; break;
-    default: options.files.push(argv[i]);
-  }
-}
-if (options.base == null) {
-  console.error('Usage: npm run check-proposals-order -- --base <ref> [--head <ref>] [--strict] [files...]');
-  process.exit(2);
-}
-
-// run from the repo root so annotation paths are repo-relative
-process.chdir(git('rev-parse', '--show-toplevel').trim());
-
-let base;
-try {
-  base = git('rev-parse', '--verify', `${options.base}^{commit}`).trim();
-} catch {
-  console.error(`Cannot resolve base ref '${options.base}'.`);
-  process.exit(2);
-}
-const head = options.head ?? 'HEAD'; // file contents still come from the working tree when --head is omitted
-// compare against the fork point, so that changes merged to the base branch
-// after this branch diverged are not attributed to it
-try {
-  base = git('merge-base', base, head).trim();
-} catch {
-  // e.g. shallow history; fall back to the base ref itself
-}
-
-let files = options.files;
-if (files.length === 0) {
-  const diffArgs = ['diff', '--name-only', '--diff-filter=ACMR', '--no-renames', base];
-  if (options.head != null) diffArgs.push(options.head);
-  files = git(...diffArgs).split('\n').filter(file => AGENDA_PATH_PATTERN.test(file));
-}
-if (files.length === 0) {
-  console.error('No agenda documents changed.');
-  process.exit(0);
-}
-
-let errorCount = 0;
-let runFailed = false;
-for (const file of files) {
-  const baseContents = tryGitShow(base, file);
-  let headContents;
-  if (options.head == null) {
-    try {
-      headContents = fs.readFileSync(file, 'utf8');
-    } catch {
-      console.error(`Cannot read '${file}' from the working tree.`);
-      process.exit(2);
-    }
-  } else {
-    headContents = tryGitShow(options.head, file);
-    if (headContents == null) {
-      console.error(`Cannot read '${file}' from '${options.head}'.`);
-      process.exit(2);
+// an IIFE so the early bailouts below can set process.exitCode and `return`;
+// setting the code rather than calling process.exit lets buffered annotation
+// output flush before the process ends (it can be truncated otherwise in CI)
+(() => {
+  const options = { base: null, head: null, strict: false, files: [] };
+  const argv = process.argv.slice(2);
+  for (let i = 0; i < argv.length; i++) {
+    switch (argv[i]) {
+      case '--base': options.base = argv[++i]; break;
+      case '--head': options.head = argv[++i]; break;
+      case '--strict': options.strict = true; break;
+      default: options.files.push(argv[i]);
     }
   }
-  const annotations = checkFile(baseContents, headContents);
-  for (const { kind, line, message } of annotations) {
-    if (RUN_FAILURE_KINDS.has(kind)) runFailed = true;
-    else if (SEVERITY[kind] === 'error') errorCount++;
-    const title = RUN_FAILURE_KINDS.has(kind) ? 'Proposals table not found' : 'Proposals table ordering';
-    // a run-failure annotation has no row to anchor to, so it is file-level
-    const location = line == null
-      ? `file=${escapeAnnotationProperty(file)}`
-      : `file=${escapeAnnotationProperty(file)},line=${line}`;
-    console.log(`::${SEVERITY[kind]} ${location},title=${title}::${escapeAnnotationData(message)}`);
+  if (options.base == null) {
+    console.error('Usage: npm run check-proposals-order -- --base <ref> [--head <ref>] [--strict] [files...]');
+    process.exitCode = 2;
+    return;
   }
-  if (annotations.length === 0) {
-    console.error(`OK: ${file}`);
-  } else if (annotations.some(annotation => RUN_FAILURE_KINDS.has(annotation.kind))) {
-    console.error(`Could not check ${file}: no proposals table found.`);
-  } else {
-    console.error(`${annotations.length} ordering problem(s) introduced in ${file}`);
+
+  // run from the repo root so annotation paths are repo-relative
+  process.chdir(git('rev-parse', '--show-toplevel').trim());
+
+  let base;
+  try {
+    base = git('rev-parse', '--verify', `${options.base}^{commit}`).trim();
+  } catch {
+    console.error(`Cannot resolve base ref '${options.base}'.`);
+    process.exitCode = 2;
+    return;
   }
-}
-// a failure to run takes precedence over ordering violations
-if (runFailed) process.exit(2);
-if (options.strict && errorCount > 0) process.exit(1);
+  const head = options.head ?? 'HEAD'; // file contents still come from the working tree when --head is omitted
+  // compare against the fork point, so that changes merged to the base branch
+  // after this branch diverged are not attributed to it
+  try {
+    base = git('merge-base', base, head).trim();
+  } catch {
+    // e.g. shallow history; fall back to the base ref itself
+  }
+
+  let files = options.files;
+  if (files.length === 0) {
+    const diffArgs = ['diff', '--name-only', '--diff-filter=ACMR', '--no-renames', base];
+    if (options.head != null) diffArgs.push(options.head);
+    files = git(...diffArgs).split('\n').filter(file => AGENDA_PATH_PATTERN.test(file));
+  }
+  if (files.length === 0) {
+    console.error('No agenda documents changed.');
+    return;
+  }
+
+  let errorCount = 0;
+  let runFailed = false;
+  for (const file of files) {
+    const baseContents = tryGitShow(base, file);
+    let headContents;
+    if (options.head == null) {
+      try {
+        headContents = fs.readFileSync(file, 'utf8');
+      } catch {
+        console.error(`Cannot read '${file}' from the working tree.`);
+        process.exitCode = 2;
+        return;
+      }
+    } else {
+      headContents = tryGitShow(options.head, file);
+      if (headContents == null) {
+        console.error(`Cannot read '${file}' from '${options.head}'.`);
+        process.exitCode = 2;
+        return;
+      }
+    }
+    const annotations = checkFile(baseContents, headContents);
+    for (const { kind, line, message } of annotations) {
+      if (RUN_FAILURE_KINDS.has(kind)) runFailed = true;
+      else if (SEVERITY[kind] === 'error') errorCount++;
+      const title = RUN_FAILURE_KINDS.has(kind) ? 'Proposals table not found' : 'Proposals table ordering';
+      // a run-failure annotation has no row to anchor to, so it is file-level
+      const location = line == null
+        ? `file=${escapeAnnotationProperty(file)}`
+        : `file=${escapeAnnotationProperty(file)},line=${line}`;
+      console.log(`::${SEVERITY[kind]} ${location},title=${title}::${escapeAnnotationData(message)}`);
+    }
+    if (annotations.length === 0) {
+      console.error(`OK: ${file}`);
+    } else if (annotations.some(annotation => RUN_FAILURE_KINDS.has(annotation.kind))) {
+      console.error(`Could not check ${file}: no proposals table found.`);
+    } else {
+      console.error(`${annotations.length} ordering problem(s) introduced in ${file}`);
+    }
+  }
+  // a failure to run takes precedence over ordering violations
+  if (runFailed) {
+    process.exitCode = 2;
+  } else if (options.strict && errorCount > 0) {
+    process.exitCode = 1;
+  }
+})();

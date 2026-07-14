@@ -51,7 +51,10 @@ const SEVERITY = {
 const RUN_FAILURE_KINDS = new Set(['missing-table']);
 
 function git(...args) {
-  return execFileSync('git', args, { encoding: 'utf8', stdio: ['ignore', 'pipe', 'pipe'] });
+  return execFileSync('git', args, {
+    encoding: 'utf8',
+    stdio: ['ignore', 'pipe', 'pipe'],
+  });
 }
 
 function tryGitShow(commit, file) {
@@ -79,14 +82,23 @@ function escapeAnnotationProperty(text) {
   const argv = process.argv.slice(2);
   for (let i = 0; i < argv.length; i++) {
     switch (argv[i]) {
-      case '--base': options.base = argv[++i]; break;
-      case '--head': options.head = argv[++i]; break;
-      case '--strict': options.strict = true; break;
-      default: options.files.push(argv[i]);
+      case '--base':
+        options.base = argv[++i];
+        break;
+      case '--head':
+        options.head = argv[++i];
+        break;
+      case '--strict':
+        options.strict = true;
+        break;
+      default:
+        options.files.push(argv[i]);
     }
   }
   if (options.base == null) {
-    console.error('Usage: npm run check-proposals-order -- --base <ref> [--head <ref>] [--strict] [files...]');
+    console.error(
+      'Usage: npm run check-proposals-order -- --base <ref> [--head <ref>] [--strict] [files...]',
+    );
     process.exitCode = 2;
     return;
   }
@@ -113,9 +125,17 @@ function escapeAnnotationProperty(text) {
 
   let files = options.files;
   if (files.length === 0) {
-    const diffArgs = ['diff', '--name-only', '--diff-filter=ACMR', '--no-renames', base];
+    const diffArgs = [
+      'diff',
+      '--name-only',
+      '--diff-filter=ACMR',
+      '--no-renames',
+      base,
+    ];
     if (options.head != null) diffArgs.push(options.head);
-    files = git(...diffArgs).split('\n').filter(file => AGENDA_PATH_PATTERN.test(file));
+    files = git(...diffArgs)
+      .split('\n')
+      .filter((file) => AGENDA_PATH_PATTERN.test(file));
   }
   if (files.length === 0) {
     console.error('No agenda documents changed.');
@@ -147,19 +167,28 @@ function escapeAnnotationProperty(text) {
     for (const { kind, line, message } of annotations) {
       if (RUN_FAILURE_KINDS.has(kind)) runFailed = true;
       else if (SEVERITY[kind] === 'error') errorCount++;
-      const title = RUN_FAILURE_KINDS.has(kind) ? 'Proposals table not found' : 'Proposals table ordering';
+      const title = RUN_FAILURE_KINDS.has(kind)
+        ? 'Proposals table not found'
+        : 'Proposals table ordering';
       // a run-failure annotation has no row to anchor to, so it is file-level
-      const location = line == null
-        ? `file=${escapeAnnotationProperty(file)}`
-        : `file=${escapeAnnotationProperty(file)},line=${line}`;
-      console.log(`::${SEVERITY[kind]} ${location},title=${title}::${escapeAnnotationData(message)}`);
+      const location =
+        line == null
+          ? `file=${escapeAnnotationProperty(file)}`
+          : `file=${escapeAnnotationProperty(file)},line=${line}`;
+      console.log(
+        `::${SEVERITY[kind]} ${location},title=${title}::${escapeAnnotationData(message)}`,
+      );
     }
     if (annotations.length === 0) {
       console.error(`OK: ${file}`);
-    } else if (annotations.some(annotation => RUN_FAILURE_KINDS.has(annotation.kind))) {
+    } else if (
+      annotations.some((annotation) => RUN_FAILURE_KINDS.has(annotation.kind))
+    ) {
       console.error(`Could not check ${file}: no proposals table found.`);
     } else {
-      console.error(`${annotations.length} ordering problem(s) introduced in ${file}`);
+      console.error(
+        `${annotations.length} ordering problem(s) introduced in ${file}`,
+      );
     }
   }
   // a failure to run takes precedence over ordering violations

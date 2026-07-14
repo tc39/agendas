@@ -31,7 +31,7 @@ export function splitCells(line) {
   // the leading pipe produces an empty first element
   cells.shift();
   if (trimmed.endsWith('|')) cells.pop();
-  return cells.map(cell => cell.trim());
+  return cells.map((cell) => cell.trim());
 }
 
 export function parseStage(cell) {
@@ -60,11 +60,12 @@ export function parseProposalsTables(contents) {
   const tables = [];
   for (let i = 0; i < lines.length - 1; i++) {
     if (!/^\s*\|/.test(lines[i])) continue;
-    const headerCells = splitCells(lines[i]).map(cell => cell.toLowerCase());
+    const headerCells = splitCells(lines[i]).map((cell) => cell.toLowerCase());
     if (headerCells.length !== HEADER_CELLS.length) continue;
     if (!HEADER_CELLS.every((cell, k) => headerCells[k] === cell)) continue;
     if (!/^\s*\|/.test(lines[i + 1])) continue;
-    if (!splitCells(lines[i + 1]).every(cell => /^:?-+:?$/.test(cell))) continue;
+    if (!splitCells(lines[i + 1]).every((cell) => /^:?-+:?$/.test(cell)))
+      continue;
     const rows = [];
     let j = i + 2;
     for (; j < lines.length && /^\s*\|/.test(lines[j]); j++) {
@@ -98,9 +99,10 @@ export function findStaticViolations(rows) {
       if (earlier.stage < later.stage) {
         violations.push({ kind: 'stage', i, j });
       } else if (
-        earlier.stage === later.stage
-        && earlier.timebox != null && later.timebox != null
-        && earlier.timebox > later.timebox
+        earlier.stage === later.stage &&
+        earlier.timebox != null &&
+        later.timebox != null &&
+        earlier.timebox > later.timebox
       ) {
         violations.push({ kind: 'timebox', i, j });
       }
@@ -137,7 +139,7 @@ export function matchRows(baseRows, headRows) {
 // row whose stage/timebox was edited into violation is
 export function findNewStaticViolations(baseRows, headRows, headToBase) {
   const baseViolations = new Set(
-    findStaticViolations(baseRows).map(v => `${v.kind}:${v.i}:${v.j}`),
+    findStaticViolations(baseRows).map((v) => `${v.kind}:${v.i}:${v.j}`),
   );
   return findStaticViolations(headRows).filter(({ kind, i, j }) => {
     if (headToBase[i] == null || headToBase[j] == null) return true;
@@ -162,11 +164,13 @@ export function findInsertionViolations(baseRows, headRows, headToBase) {
     // rows that were already in this same group in the base table; a matched
     // row whose stage or timebox changed has an unknowable position among its
     // new peers, so it is exempt from the checks below
-    const existing = group.filter(h => {
+    const existing = group.filter((h) => {
       const b = headToBase[h];
-      return b != null
-        && baseRows[b].stage === headRows[h].stage
-        && baseRows[b].timebox === headRows[h].timebox;
+      return (
+        b != null &&
+        baseRows[b].stage === headRows[h].stage &&
+        baseRows[b].timebox === headRows[h].timebox
+      );
     });
     // existing rows must keep their base order: it records insertion date
     for (let x = 0; x < existing.length; x++) {
@@ -193,11 +197,13 @@ export function findInsertionViolations(baseRows, headRows, headToBase) {
 // row against four neighbours is four pairs. Anchor each pair on its likelier
 // culprit and merge pairs sharing an anchor into one message.
 function coalesceViolations(violations, baseRows, headRows, headToBase) {
-  const changed = h => {
+  const changed = (h) => {
     const b = headToBase[h];
-    return b == null
-      || baseRows[b].stage !== headRows[h].stage
-      || baseRows[b].timebox !== headRows[h].timebox;
+    return (
+      b == null ||
+      baseRows[b].stage !== headRows[h].stage ||
+      baseRows[b].timebox !== headRows[h].timebox
+    );
   };
   const grouped = new Map();
   for (const { kind, i, j } of violations) {
@@ -206,7 +212,10 @@ function coalesceViolations(violations, baseRows, headRows, headToBase) {
     // culprit first)
     let anchor = i;
     let other = j;
-    if ((kind === 'stage' || kind === 'timebox') && !(changed(i) && !changed(j))) {
+    if (
+      (kind === 'stage' || kind === 'timebox') &&
+      !(changed(i) && !changed(j))
+    ) {
       anchor = j;
       other = i;
     }
@@ -240,25 +249,32 @@ export function checkFile(baseContents, headContents) {
   // changed document without one means the table structure drifted and our
   // matching silently broke. Report it rather than passing vacuously.
   if (headTables.length === 0) {
-    return [{
-      kind: 'missing-table',
-      line: null,
-      message: 'No proposals table (a "| stage | timebox | topic | presenter |" table) was found, so its ordering could not be checked. If the table was renamed, moved, or its columns changed, update scripts/check-proposals-order.mjs to match.',
-    }];
+    return [
+      {
+        kind: 'missing-table',
+        line: null,
+        message:
+          'No proposals table (a "| stage | timebox | topic | presenter |" table) was found, so its ordering could not be checked. If the table was renamed, moved, or its columns changed, update scripts/check-proposals-order.mjs to match.',
+      },
+    ];
   }
-  const baseTables = baseContents == null ? [] : parseProposalsTables(baseContents);
+  const baseTables =
+    baseContents == null ? [] : parseProposalsTables(baseContents);
   const annotations = [];
   // pair base and head tables by order of appearance; an unpaired head table
   // (or a file absent from the base) has every row treated as newly added
   headTables.forEach((headTable, tableIndex) => {
-    const baseRows = tableIndex < baseTables.length ? baseTables[tableIndex].rows : [];
+    const baseRows =
+      tableIndex < baseTables.length ? baseTables[tableIndex].rows : [];
     const headRows = headTable.rows;
     const headToBase = matchRows(baseRows, headRows);
     const violations = [
       ...findNewStaticViolations(baseRows, headRows, headToBase),
       ...findInsertionViolations(baseRows, headRows, headToBase),
     ];
-    annotations.push(...coalesceViolations(violations, baseRows, headRows, headToBase));
+    annotations.push(
+      ...coalesceViolations(violations, baseRows, headRows, headToBase),
+    );
   });
   return annotations.sort((a, b) => a.line - b.line);
 }

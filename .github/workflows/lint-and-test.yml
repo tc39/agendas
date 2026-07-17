@@ -11,10 +11,11 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  lint-and-test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
       - uses: ljharb/actions/node/install@main
         name: 'nvm install lts/* && npm install'
+      - run: npm run lint
       - run: npm test

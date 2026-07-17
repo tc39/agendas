@@ -6,7 +6,6 @@
     "check-proposals-order": "node ./scripts/check-proposals-order.cli.mjs",
     "lint": "markdownlint-cli2",
     "lint:fix": "markdownlint-cli2 --fix",
-    "pretest": "npm run lint",
     "test": "npm run test:unit",
     "test:unit": "node --test 'scripts/*.test.mjs'"
   },

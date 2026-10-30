@@ -4,7 +4,11 @@
 
 | Mtg num | First day    | Last day     | Location                | Time zone                           | Host                           |
 | :-----: | ------------ | ------------ | ----------------------- | ----------------------------------- | ------------------------------ |
-|   117   | `2026‑11-30` | `2026‑12-03` | Remote &nbsp; 💻        | EASST (Pacific/Easter &nbsp; 🗿, UTC -6) | _n/a_                          |
+|   117   | `2026‑11-30` | `2026‑12-03` | Remote &nbsp; 💻        | CST (America/Regina &nbsp; 🇨🇦, UTC -6)       | _n/a_                 |
+|   118   | `2027‑02-01` | `2027‑02-04` | Remote &nbsp; 💻        | CST (America/Rankin_Inlet &nbsp; 🇨🇦, UTC -6) | _n/a_                 |
+|   119   | `2027‑04-06` | `2027‑04-08` | Mexico City &nbsp; 🌮   | CST (America/Mexico_City &nbsp; 🇲🇽, UTC -6)  | Google                |
+|   120   | `2027‑06-01` | `2027‑06-04` | Remote &nbsp; 💻        | CDT (America/Ojinaga &nbsp; 🇲🇽, UTC -5)      | _n/a_                 |
+|   121   | `2027‑07-27` | `2027‑07-29` | London &nbsp;  ☕        | BST (Europe/London &nbsp; 🇬🇧, UTC +1)        | Cloudflare            |
 
 ## Agendas
 
